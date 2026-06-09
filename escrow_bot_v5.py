@@ -23,8 +23,7 @@
 ║  ✅ /myfiles — seller uploaded files dekhe                       ║
 ║  ✅ /deliver — seller explicitly deliver command                 ║
 ║  ✅ Admin /sendfiles — buyer ko files release karo               ║
-╚═"8873236829:AAFcClPWVgi56hy8jf5kEG9d6JytwsgwQWE"
-═════════════════════════════════════════════════════════════════╝
+╚══════════════════════════════════════════════════════════════════╝
 
 INSTALL:
   pip install "python-telegram-bot[job-queue]>=20.0" aiofiles aiohttp
@@ -63,8 +62,8 @@ from telegram.error import TelegramError
 #  🔧  CONFIGURATION — APNI DETAILS YAHAN BHARO
 # ══════════════════════════════════════════════════════════════════
 BOT_TOKEN       = BOT_TOKEN = os.getenv("BOT_TOKEN")  # @BotFather se lo
-ADMIN_ID        = 8973617996          # Tumhara Telegram numeric ID
-ADMIN_UPI       = "sumit730@fam"      # Tumhara UPI ID
+ADMIN_ID        = ADMIN_ID = int(os.getenv("ADMIN_ID"))          # Tumhara Telegram numeric ID
+ADMIN_UPI       = ADMIN_UPI = os.getenv("ADMIN_UPI")      # Tumhara UPI ID
 QR_FILE         = "admin_qr.jpg"      # Local QR image (optional — agar file nahi to API use hogi)
 DATA_FILE       = "phantom_data.json" # Database JSON file
 DEAL_EXPIRE_HR  = 24                  # Deal expiry in hours
