@@ -1990,10 +1990,15 @@ def main():
     # ── Callback handler ───────────────────────────────────────────
     app.add_handler(CallbackQueryHandler(handle_callback))
 
-    print("✅ Bot chal raha hai! Ctrl+C se band karo.\n")
-             loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-            app.run_polling(allowed_updates=Update.ALL_TYPES, drop_pending_updates=True)
+print("✅ Bot chal raha hai! Ctrl+C se band karo.\n")
+
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
+
+app.run_polling(
+    allowed_updates=Update.ALL_TYPES,
+    drop_pending_updates=True
+)
 
 
 if __name__ == "__main__":
