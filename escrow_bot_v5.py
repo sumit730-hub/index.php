@@ -61,9 +61,9 @@ from telegram.error import TelegramError
 # ══════════════════════════════════════════════════════════════════
 #  🔧  CONFIGURATION — APNI DETAILS YAHAN BHARO
 # ══════════════════════════════════════════════════════════════════
-BOT_TOKEN       = BOT_TOKEN = os.getenv("BOT_TOKEN")  # @BotFather se lo
-ADMIN_ID        = ADMIN_ID = int(os.getenv("ADMIN_ID"))          # Tumhara Telegram numeric ID
-ADMIN_UPI       = ADMIN_UPI = os.getenv("ADMIN_UPI")      # Tumhara UPI ID
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # @BotFather se lo
+ADMIN_ID = int(os.getenv("ADMIN_ID"))          # Tumhara Telegram numeric ID
+ADMIN_UPI = os.getenv("ADMIN_UPI")      # Tumhara UPI ID
 QR_FILE         = "admin_qr.jpg"      # Local QR image (optional — agar file nahi to API use hogi)
 DATA_FILE       = "phantom_data.json" # Database JSON file
 DEAL_EXPIRE_HR  = 24                  # Deal expiry in hours
